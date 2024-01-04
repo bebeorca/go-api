@@ -7,8 +7,9 @@ type User struct {
 }
 
 type Pesanan struct {
-	ID        int64  `gorm:"primaryKey" json:"id"`
-	UserID    int64  `gorm:"index" json:"user_id"`
-	Berat     int64  `gorm:"type:int" json:"berat"`
-	Deskripsi string `gorm:"type:varchar(255)" json:"deskripsi"`
+	ID          int64  `gorm:"primaryKey" json:"id"`
+	UserID      int64  `gorm:"index" json:"user_id"`
+	NamaPemesan string `gorm:"type:varchar(255)" json:"nama_pemesan"`
+	Berat       int64  `gorm:"type:int" json:"berat"`
+	Deskripsi   string `gorm:"type:varchar(255)" json:"deskripsi"`
 }
